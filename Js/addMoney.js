@@ -28,6 +28,10 @@ document.getElementById('donate-btn')
         const newDonateBalance = donateMoneyNumber + totalDonateAmountNumber;
         // console.log(newDonateBalance);
         const newBalance = lessMoneyNumber - donateMoneyNumber;
+        if (isNaN(donateMoney)) {
+            alert('Failed to donate money.');
+            return;
+        }
         if (donateMoneyNumber > lessMoneyNumber) {
             alert('You have not sufficient balance.');
             return;
