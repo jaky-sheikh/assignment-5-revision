@@ -53,9 +53,16 @@
         <button id="add-money-btn" class="btn">Add Money</button>
     </section>
     <section>
+        <h2 class="text-lg font-semibold text-center text-green-800">Donate for Gaibandha</h2>
         <div class="mt-5 flex flex-col md:flex-row items-center gap-5">
             <div class="w-full md:w-1/2"><img class="w-full h-auto rounded-lg shadow-lg" src="flood1.webp" alt=""></div>
             <div class="w-full md:w-1/2 space-y-4">
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div class="stat-title">Total Amount</div>
+                        <div id="total-donate-amount" class="stat-value">00</div>
+                    </div>
+                </div>
                 <input id="donate-amount-input" type="text" placeholder="Donation Amount" class="input" />
                 <button id="donate-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-green-800">Donate
                     money</button>
