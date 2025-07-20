@@ -23,6 +23,13 @@ document.getElementById('donate-btn')
         const donateMoneyNumber = parseFloat(donateMoney);
         // console.log(lessMoneyNumber, donateMoneyNumber);
         const newBalance = lessMoneyNumber - donateMoneyNumber;
+        if (donateMoneyNumber > lessMoneyNumber) {
+            alert('You have not sufficient balance.');
+            return;
+        }
+        else {
+            alert('Done')
+        }
         // console.log(newBalance);
         document.getElementById('add-amount').innerText = newBalance;
     })
