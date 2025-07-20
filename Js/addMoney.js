@@ -1,3 +1,4 @@
+// Functionality for add money btn (for admin)
 // console.log("Add money btn")
 document.getElementById('add-money-btn').addEventListener('click', function (event) {
     event.preventDefault();
@@ -10,3 +11,18 @@ document.getElementById('add-money-btn').addEventListener('click', function (eve
     // console.log(newBalance);
     document.getElementById('add-amount').innerText = newBalance;
 })
+// Functionality for donate money btn
+document.getElementById('donate-btn')
+    .addEventListener('click', function () {
+        // console.log('donate btn clicked');
+        const lessMoney = document.getElementById('add-amount').innerText;
+        // console.log(lessMoney);
+        const donateMoney = document.getElementById('donate-amount-input').value;
+        // console.log(donateMoney);
+        const lessMoneyNumber = parseFloat(lessMoney);
+        const donateMoneyNumber = parseFloat(donateMoney);
+        // console.log(lessMoneyNumber, donateMoneyNumber);
+        const newBalance = lessMoneyNumber - donateMoneyNumber;
+        // console.log(newBalance);
+        document.getElementById('add-amount').innerText = newBalance;
+    })
