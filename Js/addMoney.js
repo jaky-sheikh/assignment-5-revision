@@ -28,7 +28,7 @@ document.getElementById('donate-btn')
         const newDonateBalance = donateMoneyNumber + totalDonateAmountNumber;
         // console.log(newDonateBalance);
         const newBalance = lessMoneyNumber - donateMoneyNumber;
-        if (isNaN(donateMoney)) {
+        if (isNaN(donateMoneyNumber)) {
             alert('Failed to donate money.');
             return;
         }
