@@ -12,7 +12,7 @@ document.getElementById('add-money-btn').addEventListener('click', function (eve
     // set the newBalance in UI 
     document.getElementById('add-amount').innerText = newBalance;
 })
-// Functionality for donate money btn
+// Functionality donate money btn for Gaibandha.
 document.getElementById('donate-btn')
     .addEventListener('click', function () {
         // console.log('donate btn clicked');
@@ -43,5 +43,39 @@ document.getElementById('donate-btn')
         document.getElementById('add-amount').innerText = newBalance;
 
         document.getElementById('total-donate-amount').innerText = newDonateBalance;
+
+    })
+
+// Functionality donate money btn for Noakhali.
+document.getElementById('donate-btn-noakhali')
+    .addEventListener('click', function () {
+        // console.log('donate btn clicked');
+        const lessMoney = document.getElementById('add-amount').innerText;
+        const totalDonateAmount = document.getElementById('total-donate-amount-noakhali').innerText;
+        // console.log(lessMoney, totalDonateAmount);
+        const donateMoney = document.getElementById('donate-amount-input-noakhali').value;
+        // console.log(donateMoney);
+        const lessMoneyNumber = parseFloat(lessMoney);
+        const donateMoneyNumber = parseFloat(donateMoney);
+        const totalDonateAmountNumber = parseFloat(totalDonateAmount);
+        // console.log(lessMoneyNumber, donateMoneyNumber, totalDonateAmountNumber);
+        const newDonateBalance = donateMoneyNumber + totalDonateAmountNumber;
+        // console.log(newDonateBalance);
+        const newBalance = lessMoneyNumber - donateMoneyNumber;
+        if (isNaN(donateMoneyNumber)) {
+            alert('Failed to donate money.');
+            return;
+        }
+        if (donateMoneyNumber > lessMoneyNumber) {
+            alert('You have not sufficient balance.');
+            return;
+        }
+        else {
+            alert('Congratulations! Your donation is completed.')
+        }
+        // console.log(newBalance);
+        document.getElementById('add-amount').innerText = newBalance;
+
+        document.getElementById('total-donate-amount-noakhali').innerText = newDonateBalance;
 
     })
