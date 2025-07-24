@@ -79,3 +79,21 @@ document.getElementById('donate-btn-noakhali')
         document.getElementById('total-donate-amount-noakhali').innerText = newDonateBalance;
 
     })
+
+// Toggle functionality
+document.getElementById('history-btn')
+    .addEventListener('click', function () {
+        console.log('history btn clicked');
+
+        document.getElementById('dashboard-section').classList.remove('hidden');
+        document.getElementById('donation-container').classList.add('hidden');
+
+    })
+document.getElementById('home-btn')
+    .addEventListener('click', function () {
+        console.log('home btn clicked');
+
+        document.getElementById('donation-container').classList.remove('hidden');
+        document.getElementById('dashboard-section').classList.add('hidden');
+
+    })

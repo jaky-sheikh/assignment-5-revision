@@ -51,48 +51,65 @@
             food, shelter, and medicine. Flood Foundation ensures your support reaches those who need it most. Be the
             reason someone survives today—donate now and make a meaningful difference.</p>
         <button id="add-money-btn" class="btn">Add Money</button>
+        <button id="history-btn" class="btn">History</button>
+        <button id="home-btn" class="btn">Home</button>
     </section>
-    <section class="border border-yellow-400 rounded-xl p-4 mt-5">
-        <h2 class="text-lg font-semibold text-center text-green-800">Donate for Gaibandha</h2>
-        <div class="mt-5 flex flex-col md:flex-row items-center gap-5">
-            <div class="w-full md:w-1/2"><img class="w-full h-auto rounded-lg shadow-lg" src="flood1.webp" alt=""></div>
-            <div class="w-full md:w-1/2 lg:w-full flex flex-col lg:items-center gap-3">
-                <div class="stats shadow md:w-1/3 lg:w-1/4">
-                    <div class="stat">
-                        <div class="stat-title">Total Amount</div>
-                        <div id="total-donate-amount" class="stat-value">00</div>
-                    </div>
+    <section class="" id="donation-container">
+        <div class="border border-yellow-400 rounded-xl p-4 mt-5">
+            <h2 id="location-name" class="text-lg font-semibold text-center text-green-800">Donate for Gaibandha</h2>
+            <div class="mt-5 flex flex-col md:flex-row items-center gap-5">
+                <div class="w-full md:w-1/2"><img class="w-full h-auto rounded-lg shadow-lg" src="flood1.webp" alt="">
                 </div>
-                <input id="donate-amount-input" type="text" placeholder="Donation Amount" class="input" />
-                <button id="donate-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-green-800">Donate
-                    money</button>
-                <p>Support flood relief efforts today. Your donation can make a life-changing difference for affected
-                    communities. Act now.</p>
+                <div class="w-full md:w-1/2 lg:w-full flex flex-col lg:items-center gap-3">
+                    <div class="stats shadow md:w-1/3 lg:w-1/4">
+                        <div class="stat">
+                            <div class="stat-title">Total Amount</div>
+                            <div id="total-donate-amount" class="stat-value">00</div>
+                        </div>
+                    </div>
+                    <input id="donate-amount-input" type="text" placeholder="Donation Amount" class="input" />
+                    <button id="donate-btn"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-green-800">Donate
+                        money</button>
+                    <p>Support flood relief efforts today. Your donation can make a life-changing difference for
+                        affected
+                        communities. Act now.</p>
+                </div>
+            </div>
+        </div>
+        <div class="border border-yellow-400 rounded-xl p-4 mt-5">
+            <h2 class="text-lg font-semibold text-center text-green-800">Donate for Noakhali</h2>
+            <div class="mt-5 flex flex-col md:flex-row items-center gap-5">
+                <div class="w-full md:w-1/2"><img class="w-full h-auto rounded-lg shadow-lg" src="flood2.jpg" alt="">
+                </div>
+                <div class="w-full md:w-1/2 lg:w-full flex flex-col lg:items-center gap-3">
+                    <div class="stats shadow md:w-1/3 lg:w-1/4">
+                        <div class="stat">
+                            <div class="stat-title">Total Amount</div>
+                            <div id="total-donate-amount-noakhali" class="stat-value">00</div>
+                        </div>
+                    </div>
+                    <input id="donate-amount-input-noakhali" type="text" placeholder="Donation Amount" class="input" />
+                    <button id="donate-btn-noakhali"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-green-800">Donate
+                        money</button>
+                    <p>Support flood relief efforts today. Your donation can make a life-changing difference for
+                        affected
+                        communities. Act now.</p>
+                </div>
             </div>
         </div>
     </section>
-    <section class="border border-yellow-400 rounded-xl p-4 mt-5">
-        <h2 class="text-lg font-semibold text-center text-green-800">Donate for Noakhali</h2>
-        <div class="mt-5 flex flex-col md:flex-row items-center gap-5">
-            <div class="w-full md:w-1/2"><img class="w-full h-auto rounded-lg shadow-lg" src="flood2.jpg" alt=""></div>
-            <div class="w-full md:w-1/2 lg:w-full flex flex-col lg:items-center gap-3">
-                <div class="stats shadow md:w-1/3 lg:w-1/4">
-                    <div class="stat">
-                        <div class="stat-title">Total Amount</div>
-                        <div id="total-donate-amount-noakhali" class="stat-value">00</div>
-                    </div>
-                </div>
-                <input id="donate-amount-input-noakhali" type="text" placeholder="Donation Amount" class="input" />
-                <button id="donate-btn-noakhali"
-                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-green-800">Donate
-                    money</button>
-                <p>Support flood relief efforts today. Your donation can make a life-changing difference for affected
-                    communities. Act now.</p>
+    <section id="dashboard-section" class="hidden flex justify-center">
+        <div class="card w-96 bg-base-100 card-sm shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title">Donation history</h2>
+                <p>Jaky</p>
             </div>
         </div>
+
     </section>
     <script src="Js/addMoney.js"></script>
-    <script src="Js/dash.js"></script>
 </body>
 
 </html>
